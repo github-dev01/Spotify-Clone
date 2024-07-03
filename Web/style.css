@@ -1,0 +1,501 @@
+/* May be I have not written the css in the best possible way...but Yes this is one of my initial project,so.. */
+* {
+    /* now regreting while css:I should have used boxsizing border box property */
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+    border-radius: 7px;
+}
+
+body {
+    background-color: black;
+}
+
+/* .trace{
+    border: 1px solid red;
+    border-radius: 4px;
+} */
+.margin {
+    margin: 3px;
+}
+
+button {
+    text-align: center;
+    padding: 10px ll 10px ll;
+    border-radius: 30px;
+    color: black;
+    font-size: x-small;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    height: 91vh;
+}
+
+.left {
+    width: 25vw;
+    margin: 3px;
+    height: 100%;
+    overflow: auto;
+    /* Thanks to Gpt for solving the issue-bottom to occupy the remaining space */
+    display: flex;
+    flex-direction: column;
+}
+.hamburger{
+    display: none;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
+    background-color: #121212;
+}
+.cancel{
+    display: none;
+}
+
+.top ul {
+    list-style: none;
+}
+
+.top ul li {
+    padding: 5px 0 5px 0;
+}
+
+.top ul a {
+    gap: 9px;
+    /* color: white; */
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.bottom {
+    background-color: #121212;
+    /* occupy remainig space(without hustling for calc()) */
+    flex-grow: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.library {
+    padding: 15px;
+    color: #A7A7A7;
+}
+
+.bottom a span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.bottom a {
+    justify-content: space-between;
+}
+
+.songsList ul li {
+    display: flex;
+    background-color: #242424;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin: 3px;
+    font-size: 12px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.songsList ul li button,
+.playbar button {
+    padding: 0px;
+    background: none;
+}
+
+.scroll {
+    overflow: auto;
+    flex-grow: 1;
+}
+
+.scroll::-webkit-scrollbar {
+    background-color: #242424;
+    border-radius: 10px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 10px;
+    background-color: #242424;
+}
+
+.block :first-child {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.block :nth-child(2) {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.block :nth-child(3) {
+    width: 125px;
+}
+
+.block button {
+    padding: 8px;
+}
+
+.footer {
+    padding: 15px;
+}
+
+.footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    row-gap: 15px;
+    column-gap: 10px;
+}
+
+.footer ul a {
+    font-size: 9px;
+    font-weight: bolder;
+    color: #A7A7A7;
+}
+
+.right {
+    width: 75vw;
+    height: 100%;
+    overflow: auto;
+    background-color: #121212;
+    position: relative;
+}
+
+.right::-webkit-scrollbar {
+    background-color: #242424;
+    border-radius: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: sticky;
+    top: -1px;
+    background-color: #121212;
+    /* z-index: 3; overlaps the hamburger*/
+    z-index: 1;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navigation img {
+    background-color: rgb(113, 94, 94);
+    border-radius: 10px;
+}
+
+.logs {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+.logs button{
+    padding: 5px;
+    font-size: 11px;
+}
+.template {
+    width: 203px;
+    object-fit: contain;
+    padding: 7px;
+    background-color: #252525;
+    position: relative;
+    cursor: pointer;
+}
+.template> :first-child{
+    display: flex;
+    justify-content: center;
+}
+.template .img img{
+    padding: 6px 0;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.template> :nth-child(2) {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 0 5px 0;
+    text-overflow: ellipsis;
+}
+
+.template> :nth-child(3) {
+    font-size: 14px;
+    padding-bottom: 10px;
+    height: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.playbutton {
+    position: absolute;
+    /* display: none; -->ek bar me aa rha hai*/
+    opacity: 0;
+    right: 11px;
+    bottom: 50px;
+}
+
+.template:hover {
+    .playbutton {
+        position: absolute;
+        opacity: 1;
+        display: block;
+        right: 11px;
+        bottom: 60px;
+        transition: all 600ms;
+    }
+}
+
+.playlist {
+    display: flex;
+    padding:0 20px;
+    gap: 25px;
+}
+
+.sleep {
+    display: flex;
+    padding:0 27px;
+    padding-bottom: 80px;
+    gap: 20px;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.floor {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 17px;
+    font-size: 18px;
+    font-weight: bolder;
+    background-image: linear-gradient(90deg, #af2896, #509bf5);
+}
+
+.floor div {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+
+.floor :nth-child(2) {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.lang {
+    padding: 20px;
+}
+
+.lang button {
+    display: flex;
+    align-items: center;
+    padding: 3px 15px 3px 20px;
+}
+
+.title {
+    padding: 15px;
+}
+
+.playbar {
+    /* position: absolute; -->dikkat kar rha hai fixed he karna padega koi aur chara he nahi hai*/
+    position: fixed;
+    /* bottom: 10px; not responsive %,vw are the good to go since now it upto body*/
+    bottom:9%;
+    height:calc();
+    box-sizing: border-box;
+    /* width: %; ab kyuki position is fixed to body ke he respect me he sb hoga:vw */
+    width: 74vw;
+    padding: 0 10px;
+    /* background-image: linear-gradient(90deg, #af2896, #509bf5); */
+    background-color: #1b1a1a;
+    border: 3px solid #000000;
+    padding: 5px 3px;
+    margin: 0 3px;
+}
+
+.playbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding: 2px;
+}
+.songinfo{
+    width: 250px;
+    /* word-break:break-all; */
+    font-size: 18px;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.songduration{
+    width: 90px;
+}
+.seekbar {
+    height: 6px;
+    width: 98%;
+    margin: 2px auto;
+    border: 1px solid#A7A7A7;
+    cursor: pointer;
+}
+
+.circle {
+    padding: 2px;
+    background-color:#A7A7A7;
+    border-radius: 10px;
+    height: 10px;
+    width: 10px;
+    position: relative;
+    bottom: 5px;
+    /* left:99% */
+    /* or set margin acc. */
+    left: 0%; 
+    transition:left ease-out 300ms;
+}
+.meta{
+    display: flex;
+    justify-content: space-between;
+}
+.volume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    width: 190px;
+}
+@media(max-width:1300px){
+    .body{
+        height: 100vh;
+    }
+    .left{
+        position: absolute;
+        left: -110%;
+        z-index: 2;
+        /* easeinout because aye bhi dhere aur jaye bhi dhere */
+        transition: all ease-in-out 200ms;
+        width: 370px;
+        /* can remove margin from top and bottom */
+    }
+    .hamburger{
+        display: block;
+        background-color: #121212;
+    }
+    .right{
+        width: 100vw;
+    }
+    .playbar{
+        width: 98vw;
+    }
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .cancel{
+        display: block;
+        filter: invert(1);
+    }
+    .playlist{
+        align-items: center;
+    }
+    .sleep{
+        align-items: center;
+        padding-bottom: 185px;
+    }
+    .playbutton {
+        position: absolute;
+        /* display: none; -->ek bar me aa rha hai*/
+        opacity: 0;
+        right: 10px;
+        bottom: 70px;
+    }
+    .template:hover {
+        .playbutton {
+            position: absolute;
+            opacity: 1;
+            display: block;
+            right: 10px;
+            bottom: 80px;
+            transition: all 600ms;
+        }
+        .playbutton img{
+            height: 45px;
+        }
+    }
+}
+@media(max-width:750px){
+    .left{
+        width: 100vw;
+    }
+    .playlist{
+        flex-direction: column;
+    }
+    .template{
+        width: 80vw;
+    }
+    .template .img img{
+        width:75vw;
+    }
+    .sleep{
+        flex-direction: column;
+    }
+    .meta{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 5px 0;
+    }
+    .playbutton {
+        position: absolute;
+        /* display: none; -->ek bar me aa rha hai*/
+        opacity: 0;
+        right: 35px;
+        bottom: 30px;
+    }
+    .template:hover {
+        .playbutton {
+            position: absolute;
+            opacity: 1;
+            display: block;
+            right: 35px;
+            bottom: 80px;
+            transition: all 400ms;
+        }
+    }
+    .songinfo,.songduration,.volume{
+        width: auto;
+        word-break: break-all;
+    }
+}
