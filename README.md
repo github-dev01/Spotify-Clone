@@ -26,6 +26,5 @@ Spotify-Clone of open.spotify.com home page with following features<br>
     The song and duration is displayed on the playbar
 </li>
 </ol>
-![DesktopView](https://github.com/github-dev01/Spotify-Clone/assets/147185694/4d55d688-620d-4090-a2b8-178069edfe82)
-![NotebookView](https://github.com/github-dev01/Spotify-Clone/assets/147185694/f46e4669-a503-4953-a1e6-922d26e7deab)![NotebookHamburger](https://github.com/github-dev01/Spotify-Clone/assets/147185694/6162da88-35ff-4983-996f-8cf07ed20a2b)
-![MobileSite](https://github.com/github-dev01/Spotify-Clone/assets/147185694/608de860-1fe4-42b9-b544-9f5568d5194a)![mobileHamburger](https://github.com/github-dev01/Spotify-Clone/assets/147185694/082b954f-631f-4cc0-b0b3-e56c6c7dea75)
+![DesktopView]{![DesktopView](https://github.com/github-dev01/Spotify-Clone/147185694/11e09d15-0630-4adf-896c-4acd53961c67)
+}
