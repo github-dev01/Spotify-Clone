@@ -32,7 +32,7 @@ Spotify-Clone of open.spotify.com home page with following features<br>
 <br>
 
 <b>Mobile VIew</b> <br>
-![MobileView](https://github.com/github-dev01/Spotify-Clone/assets/147185694/79a2b7e3-5bf5-4886-a31f-6d181e0c35f2)............|............![Hamburger](https://github.com/github-dev01/Spotify-Clone/assets/147185694/7ccafe30-6f90-4c86-ab8d-2cc693225bf9)
+![MobileView](https://github.com/github-dev01/Spotify-Clone/assets/147185694/79a2b7e3-5bf5-4886-a31f-6d181e0c35f2)                                         |![Hamburger](https://github.com/github-dev01/Spotify-Clone/assets/147185694/7ccafe30-6f90-4c86-ab8d-2cc693225bf9)
 
 <br>
 
