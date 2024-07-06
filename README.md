@@ -27,4 +27,6 @@ Spotify-Clone of open.spotify.com home page with following features<br>
 </li>
 </ol>
 
-![DesktopView](https://github.com/github-dev01/Spotify-Clone/assets/147185694/153d2d64-580d-4930-ab87-aa1928abe0cd)
+![DesktopView](https://github.com/github-dev01/Spotify-Clone/assets/147185694/f78d2f59-b9b0-4f83-81f8-9692c0b95249)
+
+![MobileSite](https://github.com/github-dev01/Spotify-Clone/assets/147185694/79a2b7e3-5bf5-4886-a31f-6d181e0c35f2) ![mobileHamburger](https://github.com/github-dev01/Spotify-Clone/assets/147185694/7ccafe30-6f90-4c86-ab8d-2cc693225bf9)
